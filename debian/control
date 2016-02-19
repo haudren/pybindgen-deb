@@ -1,0 +1,14 @@
+Source: pybindgen
+Priority: extra
+Maintainer: Hervé Audren <h.audren@gmail.com>
+Build-Depends: debhelper (>=9), build-essential,
+               python2.7, libpython2.7-dev,
+               gccxml, libgccxml-dev, python-pygccxml
+Standards-Version: 3.9.5
+Section: science
+Homepage: http://github.com/gjcarneiro/pybindgen
+
+Package: pybindgen
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: PyBindGen is a python bindings generator.

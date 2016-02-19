@@ -1,0 +1,5 @@
+pybindgen (0.17.0) UNRELEASED; urgency=low
+
+  * Initial release. (Closes: #0)
+
+ -- Hervé Audren <h.audren@gmail.com>  Fri, 19 Feb 2016 15:48:19 +0900
