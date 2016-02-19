@@ -1,0 +1,21 @@
+From 740bcf2c554c096c13fa2d606bb56e1c5e950147 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Herv=C3=A9=20Audren?= <h.audren@gmail.com>
+Date: Fri, 19 Feb 2016 19:23:54 +0900
+Subject: [PATCH] Add version file for 0.17.0
+
+---
+ version.py | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 version.py
+
+diff --git a/version.py b/version.py
+new file mode 100644
+index 0000000..f5b1783
+--- /dev/null
++++ b/version.py
+@@ -0,0 +1,2 @@
++__version__ = [0, 17, 0]
++"""[major, minor, micro, revno], revno omitted in official releases"""
+-- 
+1.9.1
+
