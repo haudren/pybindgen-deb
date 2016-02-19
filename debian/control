@@ -2,11 +2,13 @@ Source: pybindgen
 Priority: extra
 Maintainer: Hervé Audren <h.audren@gmail.com>
 Build-Depends: debhelper (>=9), build-essential,
+               dh-python, python-setuptools
                python2.7, libpython2.7-dev,
                gccxml, libgccxml-dev, python-pygccxml
 Standards-Version: 3.9.5
 Section: science
 Homepage: http://github.com/gjcarneiro/pybindgen
+X-Python-Version: >= 2.7
 
 Package: pybindgen
 Architecture: all
