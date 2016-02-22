@@ -1,16 +1,36 @@
 Source: pybindgen
 Priority: extra
 Maintainer: Hervé Audren <h.audren@gmail.com>
-Build-Depends: debhelper (>=9), build-essential,
-               dh-python, python-setuptools,
-               python2.7, libpython2.7-dev,
+Build-Depends: debhelper (>=9), python-all(>= 2.6.6-3),
+               python-setuptools (>= 0.6b3),
                gccxml, python-pygccxml
 Standards-Version: 3.9.5
-Section: science
+Section: python
 Homepage: http://github.com/gjcarneiro/pybindgen
 X-Python-Version: >= 2.7
 
-Package: pybindgen
+Package: python-pybindgen
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: PyBindGen is a python bindings generator.
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Python Bindings Generator
+ About
+ =====
+ PyBindGen is (surprise!) a python bindings generator.  The main features are:
+ .
+  * Generates clean C or C++ code, nearly as readable as code written
+    manually by a developer;
+  * Generated code is self contained and does not require any external
+    libraries or macros; after generating the python module only python
+    header files are required, nothing else;
+  * Does not require Boost.Python (no C++ template magic, also works in C);
+  * The interface for code generation is a simple Python API, not some
+    obscure interface definition language.  Additionally PyBindGen can
+    parse header files with gccxml, if gccxml and pygccxml are
+    installed in the system (note: pygccxml has not been ported to Python 3 yet);
+  * Can be easily extended with new type handlers;
+  * Type handlers can allocate memory and register cleanup code to free;
+  * Supports in, out, and inout parameters (e.g. with pointers or C++ references);
+  * Supports multiple return values (e.g. due to out/inout parameters);
+  * Supports wrapping of simple C++ classes;
+  * Supports virtual methods in classes;
