@@ -1,0 +1,24 @@
+From 6449f1a25dda2d66c7a4d0ea8028dd9ba47b8e7e Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Herv=C3=A9=20Audren?= <h.audren@gmail.com>
+Date: Mon, 22 Feb 2016 09:09:39 +0900
+Subject: [PATCH] Modify version to *not* use git-scm
+
+---
+ setup.py | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+Index: pybindgen/setup.py
+===================================================================
+--- pybindgen.orig/setup.py	2016-02-22 09:28:47.081243712 +0900
++++ pybindgen/setup.py	2016-02-22 09:28:59.000000000 +0900
+@@ -6,9 +6,7 @@
+ 
+ 
+ setup(name='PyBindGen',
+-      use_scm_version={"version_scheme": "post-release",
+-                       "write_to": "pybindgen/version.py"},
+-      setup_requires=['setuptools_scm'],
++      version='0.17.0',
+       description='Python Bindings Generator',
+       author='Gustavo Carneiro',
+       author_email='gjcarneiro@gmail.com',
