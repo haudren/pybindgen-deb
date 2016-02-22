@@ -1,24 +1,32 @@
-From 6449f1a25dda2d66c7a4d0ea8028dd9ba47b8e7e Mon Sep 17 00:00:00 2001
+From a6f83412970951f38d490c240a5ce1d6e5448601 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Herv=C3=A9=20Audren?= <h.audren@gmail.com>
-Date: Mon, 22 Feb 2016 09:09:39 +0900
-Subject: [PATCH] Modify version to *not* use git-scm
+Date: Mon, 22 Feb 2016 10:30:11 +0900
+Subject: [PATCH] Modified
 
 ---
- setup.py | 4 +---
- 1 file changed, 1 insertion(+), 3 deletions(-)
+ setup.py | 8 +-------
+ 1 file changed, 1 insertion(+), 7 deletions(-)
 
-Index: pybindgen/setup.py
-===================================================================
---- pybindgen.orig/setup.py	2016-02-22 09:28:47.081243712 +0900
-+++ pybindgen/setup.py	2016-02-22 09:28:59.000000000 +0900
-@@ -6,9 +6,7 @@
+diff --git a/setup.py b/setup.py
+index 95be527..f5c0eff 100644
+--- a/setup.py
++++ b/setup.py
+@@ -1,14 +1,8 @@
+ #!/usr/bin/env python
+-import sys
+-import os
+ from distutils.core import setup
  
- 
+-sys.path.insert(0, os.path.dirname(__file__))
+-from wutils import get_version, generate_version_py
+-generate_version_py(force=False)
+-
  setup(name='PyBindGen',
--      use_scm_version={"version_scheme": "post-release",
--                       "write_to": "pybindgen/version.py"},
--      setup_requires=['setuptools_scm'],
+-      version=get_version(),
 +      version='0.17.0',
        description='Python Bindings Generator',
        author='Gustavo Carneiro',
        author_email='gjcarneiro@gmail.com',
+-- 
+1.9.1
+
