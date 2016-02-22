@@ -1,5 +1,5 @@
-pybindgen (0.17.0) UNRELEASED; urgency=low
+pybindgen (0.17.0-1) UNRELEASED; urgency=low
 
-  * Initial release. (Closes: #0)
+  * source package automatically created by stdeb 0.6.0+git (Closes: #001)
 
- -- Hervé Audren <h.audren@gmail.com>  Fri, 19 Feb 2016 15:48:19 +0900
+ -- Gustavo Carneiro <gjcarneiro@gmail.com>  Mon, 22 Feb 2016 09:13:29 +0900
